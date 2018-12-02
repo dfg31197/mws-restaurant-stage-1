@@ -1,6 +1,16 @@
 /**
  * Common database helper functions.
  */
+
+ // Service Worker
+(function () {
+  console.log('in')
+if(window.navigator.serviceWorker) {
+  window.navigator.serviceWorker.register('./js/sw.js').then(() => {
+    console.log('registered')
+  });
+}
+})();
 class DBHelper {
 
   /**

@@ -6,7 +6,7 @@
 (function () {
   console.log('in')
 if(window.navigator.serviceWorker) {
-  window.navigator.serviceWorker.register('./js/sw.js').then(() => {
+  window.navigator.serviceWorker.register('./sw.js').then(() => {
     console.log('registered')
   });
 }

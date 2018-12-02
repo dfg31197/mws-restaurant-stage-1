@@ -1,5 +1,5 @@
 console.log('potato')
 self.addEventListener('fetch', (event) => {
-    console.log('fetch')
-    event.respondWith("niglet")
+    console.log(event.request.url)
+return fetch(event.request)
 })
